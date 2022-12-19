@@ -5,9 +5,9 @@
 void Turnuri_Hanoi(char sursa, char destinatie, char auxiliar, int n)
 {
 	if (n <= 0)
-		printf("Dati un numar valid de discuri (mai mare decat 0)!");
+		printf(" Dati un numar valid de discuri (mai mare decat 0)!");
 	else if (n == 1)
-		printf("Mutarea discului de pe tija %c pe tija %c. \n", sursa, auxiliar);
+		printf(" Mutarea discului de pe tija %c pe tija %c. \n", sursa, auxiliar);
 	else
 	{
 		Turnuri_Hanoi(sursa, auxiliar, destinatie, n - 1);
@@ -33,7 +33,15 @@ void Regulile() {
 	
 }
 
-
+void Legendaaa() {
+	printf("\n ************* Legenda: *************\n");
+	printf("Se spune ca acest joc este inspirat de legenda Turnului lui Brahma, aflat intr-un templu al orasului\n");
+	printf("indian Benares. Acest turn este format din 64 de discuri de aur, de a caror mutare se ocupa preotii \n ");
+	printf("templului, respectand regulile cunoscute. Legenda spune ca atunci cand turnul discurilor de aur va \n");
+	printf("fi complet transferat pe o alta tija, templul se va prabusi iar lumea va lua sfarsit. Ceea ce ne face\n");
+	printf("sa ne intrebam cu ingrijorare care este numarul minim de mutari in cazul turnului cu 64 de discuri. \n");
+	printf("Conform calculelor, durata minima de rezolvare a acestui puzzle este de  584 942 417 355 de ani. \n");;
+}
 void Meniu()
 {
 	int optiune, n;
@@ -63,13 +71,13 @@ void Meniu()
 			break;
 
 		case 3:
-			
+			Legendaaa();
 		
 			break;
 
 		case 4:
 
-			printf("Alegeti numarul de discuri: \n");
+			printf(" Alegeti numarul de discuri: \n");
 			scanf("%d", &n);
 
 			printf("\n Solutia pentru %d discuri este: \n", n);
