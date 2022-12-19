@@ -1,3 +1,5 @@
+//Turnurile din Hanoi
+
 #include <stdio.h>
 
 void Turnuri_Hanoi(char sursa, char destinatie, char auxiliar, int n)
