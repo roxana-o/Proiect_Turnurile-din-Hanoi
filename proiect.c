@@ -25,6 +25,14 @@ void Informatii() {
 	printf("discurile de pe tija A pe tija C, utilizand ca tija intermediara tija B si respectand anumite reguli. \n");;
 }
 
+void Regulile() {
+	printf("\n **********REGULI:**********\n");
+	printf("1. La fiecare pas se muta un singur disc;\n");
+	printf("2. Fiecare mutare consta in luarea celui mai de sus disc de pe o tija si asezarea lui pe o alta tija \n");
+	printf("3. Nu este permis sa se aseze un disc cu diametrul mai mare peste un disc cu diametrul mai mic.\n");
+	
+}
+
 
 void Meniu()
 {
@@ -50,12 +58,12 @@ void Meniu()
 			break;
 
 		case 2:
-			
+			Regulile();
 			
 			break;
 
 		case 3:
-		
+			
 		
 			break;
 
